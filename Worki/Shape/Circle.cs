@@ -14,7 +14,7 @@ namespace Shape
             get { return radius; }
             set
             {
-                if (value < 0)
+                if (value <= 0)
                 {
                     throw new ArgumentException("Radius should be positive");
                 }
