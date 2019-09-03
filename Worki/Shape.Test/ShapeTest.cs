@@ -14,7 +14,7 @@ namespace Shape
         {
             try
             {
-                var circle = new Circle(R);
+                Circle circle = new Circle(R);
                 double result = circle.Area();
                 Assert.True(exceptionType == null, $"Area method is expected to throw {exceptionType}");
                 Assert.Equal(area, result);
@@ -31,8 +31,8 @@ namespace Shape
         {
             try
             {
-                var circle = new Triangle(a, b, c);
-                double result = circle.Area();
+                Triangle triangle = new Triangle(a, b, c);
+                double result = triangle.Area();
                 Assert.True(exceptionType == null, $"Area method is expected to throw {exceptionType}");
                 Assert.Equal(area, result);
             }
